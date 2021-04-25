@@ -1,0 +1,15 @@
+.jumbotron {
+    text-align: center;
+    color: cadetblue;
+    
+}
+.jumbotron h1{
+    font-weight: 600;
+}
+.card-text {
+    color:cadetblue;
+}
+
+img {
+    border:solid 10px blue;
+}
