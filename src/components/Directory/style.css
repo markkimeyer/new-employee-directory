@@ -1,15 +1,13 @@
-.jumbotron {
+.header{
+    padding: 30px 0;
+    color: rgb(223, 220, 59);
+    background-color: #101d42;
+    width: 100%;
     text-align: center;
-    color: cadetblue;
-    
-}
-.jumbotron h1{
-    font-weight: 600;
-}
-.card-text {
-    color:cadetblue;
+    border-bottom: 5px solid #db1616;
+    margin-bottom: 10px;
 }
 
-img {
-    border:solid 10px blue;
+p {
+    color: white;
 }
