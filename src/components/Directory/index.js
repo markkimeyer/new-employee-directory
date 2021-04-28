@@ -6,17 +6,13 @@ import Employee from "../Employee";
 
 class Directory extends Component {
   state = {
-    filter: "",
-    results: []
+    results: [],
   };
 
-  // When this component mounts, pull random user list
+  
   componentDidMount() {
-    this.getEmployees(10);
-  }
-
-  getEmployees = (numEmployees) => {
-    API.search(numEmployees)
+    
+    API.getEmployees()
     .then(res => this.setState({ results: res.data.results.map((employee)=>{
       return(
         {
@@ -60,38 +56,12 @@ class Directory extends Component {
             </div>
           </div>
         </nav>
-        <Employee employee={this.state.results.filter(user=>{return `${user.firstName} ${user.lastName}`.toLowerCase().includes(this.state.filter.toLowerCase())})} />
+        <Employee employee={this.state.results} />
       </div>
     );
   }
 }
 
-// function Directory(props) {
-//   return (
-//     <Container>
-//       <Searchbar>
-//       </Searchbar>
-//     <div className="card">
-//       <div className="img-container">
-//         <img alt={props.name} src={props.image} />
-//       </div>
-//       <div className="content">
-//         <ul>
-//           <li>
-//             <strong>Name:</strong> {props.name}
-//           </li>
-//           <li>
-//             <strong>Email:</strong> {props.email}
-//           </li>
-//           <li>
-//             <strong>Location:</strong> {props.location}
-//           </li>
-//         </ul>
-//       </div>
-//     </div>
-//     </Container>
-//   );
-// }
 
 export default Directory;
 

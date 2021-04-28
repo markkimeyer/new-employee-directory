@@ -1,0 +1,17 @@
+th {
+    color:tomato;
+    text-align: center;
+}
+td {
+  text-align: center;  
+  margin: 2%;
+  text-align: center;
+}
+
+thead {
+    text-align: center;
+}
+
+table {
+    margin-left: 15px;
+}
