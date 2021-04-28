@@ -7,6 +7,7 @@ import Employee from "../Employee";
 class Directory extends Component {
   state = {
     results: [],
+    filter: ""
   };
 
   
@@ -23,7 +24,7 @@ class Directory extends Component {
           email: employee.email,
           dob: employee.dob.date,
           age: employee.dob.age, 
-          thumbnail : employee.picture.thumbnail
+          thumbnail : employee.picture.medium
         }
       )
     })}))
@@ -56,7 +57,7 @@ class Directory extends Component {
             </div>
           </div>
         </nav>
-        <Employee employee={this.state.results} />
+        <Employee employee={this.state.results}/>
       </div>
     );
   }
