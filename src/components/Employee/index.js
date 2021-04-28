@@ -1,6 +1,17 @@
 import React from "react";
 import "./style.css";
 
+
+  
+import Moment from 'moment';
+
+function FormatDate(dt) {
+      // Format date as MM/DD/YYYY
+      return Moment(dt).format('L');
+    
+  };
+
+
 function Employee(props) {
   const allUsers = props.employee
 
@@ -30,7 +41,7 @@ function Employee(props) {
         return(
         <tr key={employee.uuid}>
           <td>
-            <img src={employee.thumbnail} />
+            <img src={employee.thumbnail} alt="headshot" />
           </td>
           <td>
             {`${employee.firstName} ${employee.lastName}`}
@@ -42,7 +53,7 @@ function Employee(props) {
             {employee.email}
           </td>
           <td>
-            {employee.dob}
+            {FormatDate(employee.dob)}
           </td>
         </tr>
         )
