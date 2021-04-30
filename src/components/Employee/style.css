@@ -1,19 +1,22 @@
 th {
     color:tomato;
     text-align: center;
+    padding-bottom: 3%;
     /* background-color: #101d42; */
 }
 td {
   text-align: center;  
   margin: 2%;
   text-align: center;
+  padding-bottom: 3%;
 }
+
 
 thead {
     text-align: center;
 }
 
 table {
-    margin-left: 15px;
-    
+    text-align: center;
+    margin-left: 25%;
 }

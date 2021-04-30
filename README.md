@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# <div align ='center'> **Employee Directory** </div>
 
-## Available Scripts
 
-In the project directory, you can run:
+## **Table Of Contents** 
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Deployment](#github)
+4. [Contact](#contact)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+--- 
 
-### `yarn test`
+This app allows users to view employees in a directory containing an image, first and last name, phone number, email address, and date of birth. The employees can be sorted in ascending or descending order by name, phone, or date of birth. There is also a search box that can be used to filter employeees by name as the name is typed. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+--- 
 
-### `yarn build`
+<div align ='center'><img src="./public/Images/employeeDirectory.jpg"
+alt="directory" width="500"></div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+--- 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## <div align ='center'> **Installation** </div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+--- 
 
-### `yarn eject`
+<li>If you would like to download it locally, clone the repo and run `npm i`.  This will install all dependencies</li>
+<li>Initialize the app in the command line with `npm start` </li>
+<li>In the command line note which port the server is being run on and input `localhost:{givenPORT}` in the browser</li>
+</ol>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## <div align ='center'> **Deployment** </div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<div align='left'>
+<ul>
+   <li>
 
-## Learn More
+### _Github Repository:_ https://github.com/markkimeyer/budget-tracker
+</li>
+<li>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### _Github Pages:_ https://mmbudget-tracker.herokuapp.com/
+</li>
+<li>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## <div align ='center'> **Contact** </div>
+---
+<div align ='center'> Email: markkimeyer@gmail.com </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-
+import useSort from "../../Sort/useSort";
 
   
 import Moment from 'moment';
@@ -13,30 +13,36 @@ function FormatDate(dt) {
 
 
 function Employee(props) {
-  const allUsers = props.employee
+  const {items: allUsers, requestSort} = useSort(props.employee)
 
-  return (
-    <table>
-      <thead>
-        <tr>
-          <th>
-            Image
-          </th>
-          <th>
-            Name
-          </th>
-          <th>
-            Phone
-          </th>
-          <th>
-            Email
-          </th>
-          <th>
-            DOB
-          </th>
-        </tr>
-      </thead>
-      <tbody>
+const handleClick = (column) => {
+  requestSort(column);
+  }
+
+
+
+return (
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Image
+        </th>
+        <th onClick={() =>handleClick("firstName")}>
+          Name <i class="fas fa-carrot"></i>
+        </th>
+        <th onClick={() =>handleClick("phone")}>
+          Phone <i class="fas fa-carrot"></i>
+        </th>
+        <th>
+          Email
+        </th>
+        <th onClick={() =>handleClick("age")}>
+          DOB <i class="fas fa-carrot"></i>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
       {allUsers.map(employee=>{
         return(
         <tr key={employee.uuid}>
