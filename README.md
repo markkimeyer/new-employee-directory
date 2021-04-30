@@ -42,11 +42,11 @@ alt="directory" width="500"></div>
 <ul>
    <li>
 
-### _Github Repository:_ https://github.com/markkimeyer/budget-tracker
+### _Github Repository:_ https://github.com/markkimeyer/new-employee-directory
 </li>
 <li>
 
-### _Github Pages:_ https://mmbudget-tracker.herokuapp.com/
+### _Github Pages:_ https://markkimeyer.github.io/new-employee-directory/
 </li>
 <li>
 
