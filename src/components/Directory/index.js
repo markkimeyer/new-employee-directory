@@ -41,13 +41,27 @@ class Directory extends Component {
     });
   };
 
+
+  handleFilter = (obj) =>{
+    const objValues = Object.values(obj)
+    let doesContain=false;
+    objValues.forEach((currentString)=>{
+      if(!(doesContain || currentString.toString().toLowerCase().includes(this.state.filter.toLowerCase()))){
+        doesContain=false;
+      }else{
+        doesContain=true;
+      }
+    })
+    return doesContain;
+  }
+
   render() {
     return (
       <div>
         <div className="header">
           <h1>Employee Directory</h1>
           <br></br>
-          <p>Click the carrot to sorty by heading or use the search box to narrow your results.</p>
+          <p>Click the arrow to sort by heading or use the search box to narrow the results.</p>
           <br />
         </div>
         <nav className="navbar navbar-expand navbar-light bg-light">
@@ -60,7 +74,7 @@ class Directory extends Component {
             </div>
           </div>
         </nav>
-        <Employee employee={this.state.results} />
+        <Employee employee={this.state.results.filter(employee=>{return this.handleFilter(employee)})} />
       </div>
     );
   }

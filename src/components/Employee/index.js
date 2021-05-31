@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import useSort from "../../Sort/useSort";
+import useSort from "../../Sort/useSort.js";
 
   
 import Moment from 'moment';
@@ -29,16 +29,16 @@ return (
           Image
         </th>
         <th onClick={() =>handleClick("firstName")}>
-          Name <i class="fas fa-carrot"></i>
+          Name <i class="fas fa-arrows-alt-v"></i>
         </th>
         <th onClick={() =>handleClick("phone")}>
-          Phone <i class="fas fa-carrot"></i>
+          Phone <i class="fas fa-arrows-alt-v"></i>
         </th>
         <th>
           Email
         </th>
         <th onClick={() =>handleClick("age")}>
-          DOB <i class="fas fa-carrot"></i>
+          DOB <i class="fas fa-arrows-alt-v"></i>
         </th>
       </tr>
     </thead>
